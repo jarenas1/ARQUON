@@ -11,6 +11,42 @@
     font-family: "Open Sans", sans-serif;
 }
 
-body{
+header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    img{
+        width: 200px;
+        margin: 50px 0px 0px 100px;
+    }
+
+    nav{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 150px;
+        
+        a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: large;
+        }
+    }
+}
+
+.first-image{
+    margin-top: 150px;
+    width: 100%;
+    height: 450px;
     background-color: red;
+    background-image: url("../images/first-image.jpg");
+    background-size: cover;
+    background-position: center;
 }

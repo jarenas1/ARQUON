@@ -1,4 +1,4 @@
-const projects = [
+export const projects = [
     {   type1:[
         {
         id: 1,

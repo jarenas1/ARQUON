@@ -4,8 +4,9 @@ import { projects } from './data'
 
 const selector = document.querySelector('.selector')
 
+
+//CALLING SECTION ID TO SHOW THE SELECTED PROJECTS
 selector.addEventListener('click', (event) =>{
-    console.log("holaa");
     let idSection=event.target.getAttribute('id')
     console.log(idSection);
 })

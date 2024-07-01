@@ -91,6 +91,11 @@ header{
     justify-content: center;
 }
 
+.selector-selected{
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+
 
 .selector{
     margin-top: 100px;
@@ -98,7 +103,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 2px;
-    width: 300px;
+    width: 360px;
 
     p{
         font-size: 15px;
@@ -107,17 +112,18 @@ header{
 
     article{
         height: 45px;
-        width: 100px;
+        width: 120px;
         border: 1px black solid;
         display: flex;
         justify-content: center;
+        font-weight: bold;
+        padding-top: 7px;
+        transition: font-size 0.3s ease, color 0.3s ease;
     
 
         &:hover{
-            background-color: red;
-        }
-        p{
-            margin-top: 8px;
+            font-size: 15px;
+            color: gray;
         }
     }
 }
@@ -171,4 +177,86 @@ header{
     width: 100%; 
     display: flex;
     justify-content: center;
+}
+
+
+
+
+
+footer{
+width :100%;
+height : 200px;
+background-color: #626262;
+
+    section{
+        display: flex;
+        justify-content: space-between;
+        }
+    
+    }
+// -----------------------------------------------------
+    .icons{
+        margin-top: 20px;
+        margin-left: 35px;
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h4{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+        }
+        div{
+            display: flex;
+            align-items: flex-start;
+            gap: 7px;
+
+            p{
+                font-weight: 700;
+                color: black;
+            }
+        }
+    }
+// -------------------------------------------------------
+    .copy{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2{
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        p{
+            position: relative;
+            bottom: -100px;
+            color: gray;
+            
+        }
+    }
+// -----------------------------------------------------------
+
+.services{
+    margin-top: 20px;
+    margin-right: 45px;
+    h4{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    ul{
+        li{
+            font-weight: 700;
+            color: black;
+            margin-top: 15px;
+        }
+    }
 }

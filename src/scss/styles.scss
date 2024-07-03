@@ -158,7 +158,13 @@ header{
             border-radius: 9px 9px 0px 0px;
             -webkit-border-radius: 9px 9px 0px 0px;
             -moz-border-radius: 9px 9px 0px 0px;
+            transition: backgroud 0.3s ease;
+
+            &:hover{
+                background: #3e3e3e;
+            }
         }
+
 
         div{
             display: flex;
@@ -391,42 +397,72 @@ background-color: #3e3e3e;
 
 .form-container{
     width: 100%;
-    height: 500px;
+    height: 700px;
     display: flex;
+
+    img{
+        width: 30%;
+        height: 85%;
+        border-radius: 20px;
+        margin-left: 100px;
+        transition: scale 0.6s ease;
+
+        &:hover{
+            scale: 1.05;
+        }
+    }
 
     article{
         width: 60%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        
 
         h4{
             font-size: 45px;
             font-weight: 700;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
+        }
+
+        p{
+            width: 70%;
+            text-align: center;
         }
 
         form{
+            margin-top: 20px;
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 25px;
+            gap: 20px;
 
             input{
-                width: 70%;
+                width: 60%;
                 border-radius: 5px;
                 border: 1px solid #626262 ;
                 height: 35px;
+                padding-left: 10px;
             }
             textarea{
-                width: 70%;
+                padding-left: 10px;
+                width: 60%;
                 border-radius: 5px;
                 border: 1px solid #626262 ;
                 max-height: 160px;
             }
             button{
                 width: 150px;
+                height: 40px;
+                background-color: #3e3e3e;
+                border-radius: 5px;
+                color: white;
+                transition: 0.3s ease;
+
+                &:hover{
+                    background-color: #747474;
+                }
             }
         }
     }

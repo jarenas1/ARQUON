@@ -42,7 +42,7 @@ function insertProjects (id){
             </article>
             `
         })
-
+        
                     });
 
 }

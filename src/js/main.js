@@ -36,10 +36,19 @@ function insertProjects (id){
     projects.forEach(project => {
         project[id].forEach(type => {
             container.innerHTML += `
-            <article class="proyect-card">
-                <a href="#"><img src="${type.img1}" class="proyect-image" alt=""></a>
-                <div><p class="proyect-description">${type.title}</p></div>
-            </article>
+               <article class="proyect-card">
+              <a href="./project.html">
+                  <div class="image-container">
+                      <img src="${type.img1}" class="proyect-image" alt="">
+                      <div class="overlay">
+                          <div>click para saber más</div>
+                      </div>
+                  </div>
+              </a>
+              <div>
+                  <p class="proyect-description">${type.title}</p>
+              </div>
+          </article>
             `
         })
         
@@ -63,9 +72,18 @@ function defaultProjects(){
         project.selector1.forEach(type => {
             container.innerHTML += `
             <article class="proyect-card">
-                <a href="#"><img src="${type.img1}" class="proyect-image" alt=""></a>
-                <div><p class="proyect-description">${type.title}</p></div>
-            </article>
+              <a href="./project.html">
+                  <div class="image-container">
+                      <img src="${type.img1}" class="proyect-image" alt="">
+                      <div class="overlay">
+                          <div>click para saber más</div>
+                      </div>
+                  </div>
+              </a>
+              <div>
+                  <p class="proyect-description">${type.title}</p>
+              </div>
+          </article>
             `
         })
     

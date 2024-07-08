@@ -37,7 +37,7 @@ function insertProjects (id){
         project[id].forEach(type => {
             container.innerHTML += `
                <article class="proyect-card">
-              <a href="#">
+              <a href="./project.html">
                   <div class="image-container">
                       <img src="${type.img1}" class="proyect-image" alt="">
                       <div class="overlay">
@@ -72,7 +72,7 @@ function defaultProjects(){
         project.selector1.forEach(type => {
             container.innerHTML += `
             <article class="proyect-card">
-              <a href="#">
+              <a href="./project.html">
                   <div class="image-container">
                       <img src="${type.img1}" class="proyect-image" alt="">
                       <div class="overlay">
